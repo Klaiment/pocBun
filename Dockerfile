@@ -1,5 +1,5 @@
-FROM oven/bun:latest as builder
-
+FROM oven/bun:latest AS builder
+EXPOSE 3000
 WORKDIR /app
 
 COPY package.json bun.lockb ./
@@ -9,7 +9,7 @@ COPY . .
 
 RUN bun run build
 
-FROM oven/bun:latest as runner
+FROM oven/bun:latest AS runner
 
 WORKDIR /app
 
