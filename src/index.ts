@@ -1,6 +1,6 @@
 import { Elysia } from "elysia";
 import { swagger } from '@elysiajs/swagger'
-const app = new Elysia();
+export const app = new Elysia();
 let tasks = [];
 app.use(swagger())
 
