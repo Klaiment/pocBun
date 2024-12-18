@@ -9,7 +9,9 @@
   },
   "dependencies": {
     "@elysiajs/swagger": "^1.1.6",
-    "elysia": "latest"
+    "elysia": "latest",
+    "supertest": "^7.0.0",
+    "vitest": "^2.1.8"
   },
   "devDependencies": {
     "bun-types": "latest"
