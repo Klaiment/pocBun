@@ -28,7 +28,10 @@ jobs:
           bun install
 
       - name: Run tests
-        run: bun test
+        run: |
+          export BUN_INSTALL="$HOME/.bun"
+          export PATH="$BUN_INSTALL/bin:$PATH"
+          bun test
   build:
 
     runs-on: ubuntu-latest
