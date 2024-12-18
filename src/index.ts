@@ -18,6 +18,7 @@ app.post("/add-task", ({ body }) => {
     return `Task '${task}' added`;
 });
 
+app.get("/tasks", () => ({ tasks }));
 
 
 app.listen(3000)
