@@ -3,6 +3,7 @@ import { swagger } from '@elysiajs/swagger'
 const app = new Elysia();
 let tasks = [];
 app.use(swagger())
+
 app.get("/", () => "Hello Elysia");
 
 app.post("/add-task", ({ body }) => {
