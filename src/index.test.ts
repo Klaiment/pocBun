@@ -5,9 +5,6 @@ import request from 'supertest';
 // Importation du code serveur à tester
 import { app } from './index'; // Assure-toi d'exporter `app` depuis ton fichier serveur
 
-
-console.log(app)
-
 describe('Elysia API', () => {
     let instance = `http://localhost:3000`; // Stocke l'instance du serveur pour chaque test
     let tasks = []; // Mock des données pour remplacer le tableau réel
