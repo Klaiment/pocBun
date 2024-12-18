@@ -20,7 +20,7 @@ jobs:
           export PATH="$HOME/.bun/bin:$PATH"
 
       - name: Install dependencies with Bun
-        run: bun install
+        run: source ~/.bashrc | bun install
 
       - name: Run tests
         run: bun test
